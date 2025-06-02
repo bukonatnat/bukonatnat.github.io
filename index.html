@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/output.css" rel="stylesheet">
   <title> bunot's </title>
+
+  <!-- CSS -->
+<style>
+
+    .cursor::after {
+  content: '|';
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+  </style>
+
+
+
 </head>
 
 <body class="bg-first-ground text-white font-sans">
@@ -49,7 +68,11 @@
                 <div class="bg-second-ground p-10 rounded-lg shadow flex flex-col items-center text-center">
 
                     <img class="rounded-full w-32 h-32 mb-4 object-cover" src="./images/pfp.jpeg" alt="author's pic">
-                    <h1 class="text-xl font-bold mb-2"> @bukonatnatcoconut </h1>
+                     <h1 class="text-4xl font-bold mb-2 text-center">
+                    <span id="typed" class="text-white cursor text-[30px]"></span>
+                    </h1>
+
+
                     <p class="text-gray-400"> 18 • Web Developer • Student • any pronouns </p>
 
                 </div>
@@ -178,6 +201,31 @@
     </section>
 
   </div>
+  
+  <script>
+
+    const fullText = "@bukonatnat";  // The full string to type
+const typedEl = document.getElementById("typed");
+let charIndex = 0;
+const typingSpeed = 150;  // Milliseconds between each character
+
+function type() {
+  if (charIndex <= fullText.length) {
+    typedEl.textContent = fullText.slice(0, charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    // Typing finished — remove blinking cursor
+    typedEl.classList.remove("cursor");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", type);
+
+
+  </script>
+
+    
 
 </body>
 
