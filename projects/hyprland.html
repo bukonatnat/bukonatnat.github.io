@@ -24,7 +24,7 @@
             <div>
 
                 <a class="text-xl font-bold text-gray-300" href="/index.html"> 
-                    → back 
+                    → 
                 </a>
 
             </div>
@@ -36,21 +36,204 @@
 
     <header class="flex flex-col">
 
-        <img class="rounded-lg object-cover shadow-md" src="/images/rice.png">
-
-        <br>
-
         <h1 class="text-gray-300 text-4xl font-bold mb-2 text-center"> 
             Hyprland - My First Rice 
         </h1>
 
         <br>
 
-        <p class="text-gray-300 text-center">
+        <p class="text-gray-300 text-center text-[18px]">
                 The first thing I did was to install Hyprland, a dynamic tiling Wayland compositor.
         </p>
         
     </header>
+
+    <br>
+
+        <p class="text-gray-300 text-[18px] mb-2 text-center">
+            <b> Note: </b>
+        
+            You can always choose install Hyprland with pacman. Just RTFW <u> <a href="https://wiki.hyprland.org/Getting-Started/Installation/">wiki</a> </u>.
+
+        </p>
+
+        <br>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Install git:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> sudo pacman -S git </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Install yay:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> git clone https://aur.archlinux.org/yay.git </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Go to the yay directory:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> cd yay </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Make sure to install the base-devel:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> sudo pacman -S --needed base-devel </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Install yay:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> makepkg -si </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Now, install Hyprland:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> yay -S hyprland-git </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Anyway, make sure to install kitty (terminal):
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> sudo pacman -S kitty </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Now, run Hyprland by typing:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> Hyprland </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-4">
+            Boom, we're good to go.
+        </p>
+
+        <img class="rounded-lg object-cover shadow-md mb-4" src="/images/rice.png">
+
+        <p class="text-gray-300 text-[18px] mb-4">
+            <b> Here is my goal: </b>
+        </p>
+
+        <nav class="bg-second-ground pt-8 pb-8 pl-4 font-mono rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <p class="text-mono text-gray-300"> 
+                        
+                        • customize my terminal (kitty)
+
+                        <br>
+
+                        •  minimal top bar
+
+                        <br>
+
+                        •  dock (?)
+
+                        <br>
+
+                        •  make it look like a rice
+                        
+                    </p>
+                    
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+            Now, let's check our terminal: (Windows + Return)
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <pre class="text-mono text-gray-300"> fastfetch </pre>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <img class="rounded-lg object-cover shadow-md mb-4 mt-5" src="/images/fastfetch.png">
+
 
 </div>
 
