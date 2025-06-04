@@ -34,7 +34,12 @@
 
   </nav>
 
+        <h1 class="text-gray-300 text-4xl font-bold mb-2 text-center"> 
+            Arch Linux - installing, booting and setting it up.
+        </h1>
+
         <p class="text-gray-300 text-[17px] text-center items-center mt-4">
+            
 
             <!--
 
@@ -87,7 +92,9 @@
 
         -->
 
-        <p class="text-gray-300 text-4xl mb-4"> 
+        <br>
+
+        <p class="text-gray-300 text-2xl mb-4"> 
             <b> 
                 How the hell did I install it? 
             </b> 
@@ -153,7 +160,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div>
-                    <p class="text-mono text-gray-300"> agiagi123 </p>
+                    <p class="text-mono text-gray-300"> <i> your password </i> </p>
                 </div>        
             </div>
         </div>
@@ -187,7 +194,70 @@
                 </div>        
             </div>
         </div>
+        
         </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+           Delete the partitions if you have any, and create a new one.
+           I normally create a 1G EFI partition, a 16GB swap partition, and the rest is for the root partition.
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto p-5 px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <p class="text-mono text-gray-300"> 
+
+                        1G for EFI <br>
+                        16G for SWAP <br>
+                        the rest is for ROOT
+                        
+                    </p>
+                </div>        
+            </div>
+        </div>
+        </nav>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+           <b> EFI </b> - for the boot to load. <br>
+           <b> SWAP </b> - for the RAM, if you have low RAM, it will use this partition as a virtual memory. <br>
+           <b> ROOT </b> - for the system files, programs, and everything else.
+        </p>
+
+        <p class="text-gray-300 text-[18px] mb-2">
+           Now, make it ext4 by typing:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <p class="text-mono text-gray-300"> 
+                        mkfs.ext4 /dev/nvme0n1p3 (root_partition)
+                    </p>
+                </div>        
+            </div>
+        </div>
+        </nav>
+        
+
+        <p class="text-gray-300 text-[18px] mb-2">
+           Second, make the swap:
+        </p>
+
+        <nav class="bg-second-ground rounded-l shadow-md mb-3">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div>
+                    <p class="text-mono text-gray-300"> 
+                        mkswap /dev/nvme0n1p2 (swap_partition)
+                    </p>
+                </div>        
+            </div>
+        </div>
 
         
 
