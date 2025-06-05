@@ -121,11 +121,15 @@
             Projects -
         </h2>
 
+        
+
         <div class="grid grid-cols-1 sm:grid-cols-1 gap-6">
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
 
-                <!-- first card-->
+                <!--
+
+                 first card 
 
                 <div class="bg-second-ground p-4 rounded-lg shadow">
 
@@ -144,6 +148,7 @@
                     </a>
 
                 </div>
+            -->
                 
 
                 <!-- second card -->
@@ -151,14 +156,14 @@
                     <img src="./images/rice.png" alt="Project Preview" class="w-full h-60 object-cover rounded-lg mb-4">
 
                     <h3 class="font-bold text-xl mb-2"> 
-                        Hyprland - First Rice
+                        -
                     </h3>
 
                     <p class="text-gray-400 text-sm mb-2"> 
                         wokinon it
                     </p>
 
-                    <a href="./projects/hyprland.html" class="text-blue-400 hover:underline text-sm"> 
+                    <a href="" class="text-blue-400 hover:underline text-sm"> 
                         View Project →
                     </a>
 
@@ -204,25 +209,25 @@
   <script>
 
     const fullText = "@bukonatnat";  // The full string to type
-const typedEl = document.getElementById("typed");
-let charIndex = 0;
-const typingSpeed = 150;  // Milliseconds between each character
+    const typedEl = document.getElementById("typed");
+    let charIndex = 0;
+    const typingSpeed = 150;  // Milliseconds between each character
 
-function type() {
-  if (charIndex <= fullText.length) {
-    typedEl.textContent = fullText.slice(0, charIndex);
-    charIndex++;
-    setTimeout(type, typingSpeed);
-  } else {
-    // Typing finished — remove blinking cursor
-    typedEl.classList.remove("cursor");
-  }
-}
+    function type() {
+        if (charIndex <= fullText.length) {
+        typedEl.textContent = fullText.slice(0, charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+    } else {
+        // Typing finished — remove blinking cursor
+        typedEl.classList.remove("cursor");
+        }
+    }
 
-document.addEventListener("DOMContentLoaded", type);
+    document.addEventListener("DOMContentLoaded", type);
 
 
-  </script>
+    </script>
 
     
 
