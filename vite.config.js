@@ -5,8 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/bukonatnat.github.io',
   plugins: [
-  react(),
-  tailwindcss(),
+    react(),
+    tailwindcss(),
   ],
 })
